@@ -1,0 +1,35 @@
+# A crawler obeys only its own most specific User-agent group; groups do not
+# merge, so the desk Disallow must repeat in every group.
+User-agent: *
+Allow: /
+Disallow: /desk.html
+
+User-agent: Googlebot
+Allow: /
+Disallow: /desk.html
+
+User-agent: Bingbot
+Allow: /
+Disallow: /desk.html
+
+User-agent: GPTBot
+Allow: /
+Disallow: /desk.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /desk.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /desk.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /desk.html
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /desk.html
+
+Sitemap: https://dispatch.neorgon.com/sitemap.xml

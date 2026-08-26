@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "site": "dispatch",
+  "updated": "2026-08-26",
+  "posts": [
+    {
+      "id": "2026-08-26-dispatch-is-live",
+      "date": "2026-08-26",
+      "kind": "launch",
+      "site": "dispatch-site",
+      "title": "Dispatch is live",
+      "summary": "The fleet gets a front page. Launches, features, and fixes land here as short stories, each one approved at the desk before it ships.",
+      "body": [
+        "Neorgon ships sites faster than anyone can follow, and until now there was no single place that said what changed. Dispatch is that place: a news feed for the fleet, written from the work that actually happened.",
+        "Every story starts as a draft pulled from fleet work logs. Nothing publishes itself: drafts wait at the desk until a human reads them, edits them, and approves them into this feed."
+      ],
+      "links": [
+        { "label": "Browse the fleet", "url": "https://neorgon.com/" }
+      ],
+      "tags": ["dispatch", "fleet"]
+    },
+    {
+      "id": "2026-08-25-stake-deals-itself-in",
+      "date": "2026-08-25",
+      "kind": "note",
+      "site": "stake-site",
+      "title": "Stake deals itself in",
+      "summary": "The print-and-play boss rush for one player, one die, and the bricks you own is now a registered fleet site. Rules, printable cards, an on-screen runner, and a balance simulator are on the way to stake.neorgon.com.",
+      "body": [
+        "Stake started as a plan document on August 22 and grew into a full project three days later: game rules, printable cards, a browser runner, and a simulator that checks the balance math.",
+        "The site is registered and its domain is reserved. Watch this feed for the moment it goes live."
+      ],
+      "links": [
+        { "label": "Board games on the hub", "url": "https://neorgon.com/#group-boardgames" }
+      ],
+      "tags": ["stake", "board-games", "coming-soon"]
+    },
+    {
+      "id": "2026-08-24-header-kit-arrival-fix",
+      "date": "2026-08-24",
+      "kind": "fix",
+      "site": null,
+      "title": "The Header Kit counts arrivals right again",
+      "summary": "The shared header's arrival pattern now counts #s= hashes, so deep links into a site register the way plain visits do.",
+      "body": [
+        "A small regex gap in the vendored Header Kit meant arrivals that carried a #s= hash slipped past the arrival counter. The kit now treats them like any other visit, and the fix synced out to every site that vendors the header.",
+        "This one sat in the prompt queue as item 40 before landing, which is exactly what the queue is for."
+      ],
+      "links": [],
+      "tags": ["header-kit", "fleet"]
+    },
+    {
+      "id": "2026-08-21-pixeldoll-joins-the-fleet",
+      "date": "2026-08-21",
+      "kind": "launch",
+      "site": "pixeldoll-site",
+      "title": "Pixeldoll joins the fleet",
+      "summary": "Build a 16x16 pixel character in the browser, then meet it again in Floorplan: the my-character cookie carries your doll across the fleet.",
+      "body": [
+        "Pixeldoll is a pixel character builder on top of the shared Avatar Kit. Pick a body, a palette, and the details, and the result is yours across every site that reads the fleet cookie.",
+        "It launched as Paperdoll in the morning and was renamed Pixeldoll by the afternoon, which has to be a fleet record for fastest rebrand."
+      ],
+      "links": [
+        { "label": "Open Pixeldoll", "url": "https://pixeldoll.neorgon.com/" }
+      ],
+      "tags": ["pixeldoll", "avatar-kit"]
+    },
+    {
+      "id": "2026-08-21-avatars-learn-to-walk",
+      "date": "2026-08-21",
+      "kind": "feature",
+      "site": "floorplan-site",
+      "title": "Fleet avatars learn to walk",
+      "summary": "The Avatar Kit gains three walk frames, and Floorplan's Sim mode uses them to send little people strolling around your team map.",
+      "body": [
+        "The shared Avatar Kit now exposes walk frames 0, 1, and 2 on drawSprite and spriteDataUrl. Any site that draws fleet avatars can animate them instead of pinning them in place.",
+        "Floorplan's Sim mode is the first customer: drop people into rooms and watch them wander between desks."
+      ],
+      "links": [
+        { "label": "Open Floorplan", "url": "https://floorplan.neorgon.com/" }
+      ],
+      "tags": ["avatar-kit", "floorplan"]
+    },
+    {
+      "id": "2026-08-21-one-tiny-pixel-person",
+      "date": "2026-08-21",
+      "kind": "feature",
+      "site": null,
+      "title": "One tiny pixel person, every site",
+      "summary": "The Neorgon Avatar Kit lands: 16x16 characters with tiers, share codes, and a fleet-wide cookie, vendored to sites the same way the header and footer kits are.",
+      "body": [
+        "The fleet's third shared kit draws 16x16 pixel characters with tiers and shareable codes, and remembers your character in a cookie every neorgon.com site can read.",
+        "Like the header and footer kits, the canonical source lives in one place and sync-avatar.sh stamps vendored copies into each site. A new smoke check keeps those copies from drifting."
+      ],
+      "links": [],
+      "tags": ["avatar-kit", "fleet"]
+    }
+  ]
+}

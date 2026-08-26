@@ -1,0 +1,46 @@
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#0f172a"
+    primaryTextColor: "#e2e8f0"
+    primaryBorderColor: "#0063e5"
+    lineColor: "#38bdf8"
+    secondaryColor: "#1e293b"
+    tertiaryColor: "#1e293b"
+    clusterBkg: "#f0f7ff"
+    clusterBorder: "#bfdbfe"
+    edgeLabelBackground: "#e8f0ff"
+    mainBkg: "#0f172a"
+    nodeBorder: "#0063e5"
+    titleColor: "#1e1b4b"
+    fontFamily: "ui-sans-serif, system-ui, -apple-system, sans-serif"
+    fontSize: "13px"
+---
+flowchart TB
+    Reader([Reader]) --> HTML["index.html\nFeed shell (also ?embed=1 strip)"]
+    Operator([Operator]) --> DESK["desk.html\nApproval desk (localhost)"]
+
+    subgraph App["ES Modules"]
+        HTML --> app["app.js\nEntry point, embed detection"]
+        app --> state["state.js\nPrefs + read watermark"]
+        app --> data["data.js\nSchema: normalize + fetch"]
+        app --> render["render.js\nFeed cards, embed strip"]
+        app --> events["events.js\nFilters, keys, chrome toggle"]
+        DESK --> desk["desk.js\nDrafts, overlay, publish"]
+        desk --> deskui["desk-ui.js\nForms, previews, verdicts"]
+        deskui -->|"live previews"| render
+        desk --> data
+    end
+
+    subgraph Data["Content pipeline"]
+        NEWSROOM["/newsroom command\ndrafts from fleet work logs"] -->|"writes"| DRAFTS[("data/drafts/\ngitignored")]
+        DRAFTS -->|"fetch (404 in prod)"| desk
+        desk -->|"publish approved"| POSTS[("data/posts.json\ncommitted")]
+        POSTS -->|"fetch"| data
+        POSTS -->|"make feed"| FEED["feed.xml\nRSS 2.0"]
+    end
+
+    state <-->|"dispatch-state"| Storage[("localStorage")]
+    desk <-->|"dispatch-desk"| Storage
+    HUB["neorgon.com hub\ncorner popup iframe"] -->|"?embed=1&limit=3"| HTML

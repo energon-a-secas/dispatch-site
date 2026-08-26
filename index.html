@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdn.neorgon.org https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.neorgon.org; connect-src 'self'; upgrade-insecure-requests">
+  <title>Dispatch | Neorgon Fleet News</title>
+  <meta name="description" content="Read what shipped across the Neorgon fleet: launches, features, and fixes, drafted from real work logs and approved at the desk before publishing">
+  <meta property="og:title" content="Dispatch: Neorgon Fleet News">
+  <meta property="og:description" content="What shipped across the fleet, approved at the desk">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dispatch.neorgon.com/">
+  <meta property="og:site_name" content="Neorgon">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dispatch: Neorgon Fleet News">
+  <meta name="twitter:description" content="What shipped across the fleet, approved at the desk">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dispatch.neorgon.com/">
+  <meta property="og:locale" content="en_US">
+  <meta name="theme-color" content="#040714">
+  <meta property="og:image" content="https://dispatch.neorgon.com/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dispatch">
+  <meta name="twitter:image" content="https://dispatch.neorgon.com/og-preview.jpg">
+  <meta name="neo-repo" content="https://github.com/energon-a-secas/dispatch-site">
+  <meta name="neo-version" content="1.0.0">
+  <meta name="neo-updated" content="Aug 2026">
+  <link rel="alternate" type="application/rss+xml" title="Dispatch: Neorgon fleet news" href="https://dispatch.neorgon.com/feed.xml">
+  <link rel="icon" type="image/x-icon" href="https://cdn.neorgon.org/v1.0.0/favicon.ico" />
+  <!-- Fleet design tokens — canonical, do not redeclare locally (PROJECTS.md section 5) -->
+  <link rel="stylesheet" href="https://cdn.neorgon.org/v1.0.0/styles/base.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Neorgon Header Kit (vendored; ?header=live swaps CSS to CDN). Keep after style.css — the kit owns the header. -->
+  <script>(function(){var m=location.search.match(/[?&]theme=([\w-]+)/)||document.cookie.match(/(?:^|;\s*)neo_theme=([\w-]+)/);if(m&&m[1]!=='default')document.documentElement.dataset.theme=decodeURIComponent(m[1]);})();</script>
+  <link rel="stylesheet" href="css/neorgon-header.css">
+  <link rel="stylesheet" href="css/neorgon-themes.css">
+  <link rel="stylesheet" href="https://cdn.neorgon.org/v1.0.0/header/season.css">
+  <script defer src="js/neorgon-header.js"></script>
+  <!-- Neorgon Footer Kit (vendored). Pins the footer to the viewport floor on short
+       pages and builds the meta bar + back-to-top. -->
+  <link rel="stylesheet" href="css/neorgon-footer.css">
+  <script defer src="js/neorgon-footer.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Dispatch",
+    "description": "Read what shipped across the Neorgon fleet: launches, features, and fixes, drafted from real work logs and approved at the desk before publishing",
+    "url": "https://dispatch.neorgon.com/",
+    "applicationCategory": "NewsApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Organization", "name": "Neorgon", "url": "https://neorgon.com/" }
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Kit contract. content mode + opt-in autohide: the bar slides away
+       while you read down the feed and returns on the first scroll up. -->
+  <header class="header-bar" data-header-mode="content" data-header-autohide="on">
+    <div class="header-logo">
+      <a href="https://neorgon.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.neorgon.org/v1.0.0/energon-classic-logo.png" class="header-logo-img" alt="Logo">
+      </a>
+      <a href="./" class="header-title-link">
+        <h1>Dispatch</h1>
+        <div class="header-subtitle">Fleet launches, features, and updates</div>
+      </a>
+    </div>
+
+    <div class="header-right">
+      <div class="header-actions">
+        <a class="btn btn--ghost btn--sm" href="feed.xml" title="RSS feed" aria-label="RSS feed" data-keep-mobile>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 11a9 9 0 0 1 9 9"/>
+            <path d="M4 4a16 16 0 0 1 16 16"/>
+            <circle cx="5" cy="19" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+      <a class="header-home" href="https://neorgon.com/" title="neorgon.com" aria-label="Neorgon home">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container stack">
+      <section class="section" aria-label="Fleet news feed">
+        <div class="masthead">
+          <p class="masthead__kicker">Neorgon fleet news</p>
+          <p class="masthead__edition" id="editionLine">Loading the wire…</p>
+        </div>
+
+        <div class="feed-controls">
+          <div class="chips" id="feedChips" role="group" aria-label="Filter stories by kind"></div>
+          <input type="search" id="feedSearch" class="feed-search" placeholder="Search stories  ( / )" aria-label="Search stories">
+        </div>
+
+        <div class="feed stack stack--tight" id="feed"></div>
+
+        <p class="feed-hint">Keyboard: <kbd>j</kbd>/<kbd>k</kbd> move between stories,
+          <kbd>Enter</kbd> opens one, <kbd>/</kbd> searches, <kbd>h</kbd> hides the chrome.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="neo-footer" data-footer-mode="minimal">
+    Stories come from the fleet's own work logs and ship only after approval at
+    <a href="desk.html">the desk</a>.
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
