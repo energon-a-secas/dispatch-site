@@ -4,6 +4,29 @@
   "updated": "2026-08-26",
   "posts": [
     {
+      "id": "2026-08-26-four-sites-take-french-names",
+      "date": "2026-08-26",
+      "kind": "note",
+      "site": null,
+      "title": "Four sites take French names",
+      "summary": "Gambit is now Gamme, Stake is Enjeu, TickBox is Carnet, Rigcheck is Cadrage. One live domain moved, and the old one redirects.",
+      "body": [
+        "Parla and Sortie already carried romance-language names that say what the site does without reading as a category label. Four more join them. Gambit becomes Gamme, after 'faire ses gammes', the French for practising your scales: the drilling you do until a pattern stops needing to be worked out. Stake becomes Enjeu, which means what is at stake and hides the word for game inside it. TickBox becomes Carnet, a pocket notebook. Rigcheck becomes Cadrage, the framing of a shot.",
+        "Only Gamme was live, so it is the only one that cost anything. gambit.neorgon.com now redirects to gamme.neorgon.com with the path intact, so old links and bookmarks still land, and hub search still answers to the old name. Saved progress survived the move: the storage key deliberately kept its original name, because renaming it would have quietly wiped everyone's drills.",
+        "Enjeu, Carnet and Cadrage had reserved domains and nothing served, so renaming them cost a directory move and a registry rebuild."
+      ],
+      "links": [
+        {
+          "label": "Gamme",
+          "url": "https://gamme.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "fleet",
+        "naming"
+      ]
+    },
+    {
       "id": "2026-08-26-dispatch-is-live",
       "date": "2026-08-26",
       "kind": "launch",
@@ -15,9 +38,15 @@
         "Every story starts as a draft pulled from fleet work logs. Nothing publishes itself: drafts wait at the desk until a human reads them, edits them, and approves them into this feed."
       ],
       "links": [
-        { "label": "Browse the fleet", "url": "https://neorgon.com/" }
+        {
+          "label": "Browse the fleet",
+          "url": "https://neorgon.com/"
+        }
       ],
-      "tags": ["dispatch", "fleet"]
+      "tags": [
+        "dispatch",
+        "fleet"
+      ]
     },
     {
       "id": "2026-08-25-stake-deals-itself-in",
@@ -31,9 +60,16 @@
         "The site is registered and its domain is reserved. Watch this feed for the moment it goes live."
       ],
       "links": [
-        { "label": "Board games on the hub", "url": "https://neorgon.com/#group-boardgames" }
+        {
+          "label": "Board games on the hub",
+          "url": "https://neorgon.com/#group-boardgames"
+        }
       ],
-      "tags": ["stake", "board-games", "coming-soon"]
+      "tags": [
+        "stake",
+        "board-games",
+        "coming-soon"
+      ]
     },
     {
       "id": "2026-08-24-header-kit-arrival-fix",
@@ -47,7 +83,10 @@
         "This one sat in the prompt queue as item 40 before landing, which is exactly what the queue is for."
       ],
       "links": [],
-      "tags": ["header-kit", "fleet"]
+      "tags": [
+        "header-kit",
+        "fleet"
+      ]
     },
     {
       "id": "2026-08-21-pixeldoll-joins-the-fleet",
@@ -61,9 +100,15 @@
         "It launched as Paperdoll in the morning and was renamed Pixeldoll by the afternoon, which has to be a fleet record for fastest rebrand."
       ],
       "links": [
-        { "label": "Open Pixeldoll", "url": "https://pixeldoll.neorgon.com/" }
+        {
+          "label": "Open Pixeldoll",
+          "url": "https://pixeldoll.neorgon.com/"
+        }
       ],
-      "tags": ["pixeldoll", "avatar-kit"]
+      "tags": [
+        "pixeldoll",
+        "avatar-kit"
+      ]
     },
     {
       "id": "2026-08-21-avatars-learn-to-walk",
@@ -77,9 +122,15 @@
         "Floorplan's Sim mode is the first customer: drop people into rooms and watch them wander between desks."
       ],
       "links": [
-        { "label": "Open Floorplan", "url": "https://floorplan.neorgon.com/" }
+        {
+          "label": "Open Floorplan",
+          "url": "https://floorplan.neorgon.com/"
+        }
       ],
-      "tags": ["avatar-kit", "floorplan"]
+      "tags": [
+        "avatar-kit",
+        "floorplan"
+      ]
     },
     {
       "id": "2026-08-21-one-tiny-pixel-person",
@@ -93,7 +144,10 @@
         "Like the header and footer kits, the canonical source lives in one place and sync-avatar.sh stamps vendored copies into each site. A new smoke check keeps those copies from drifting."
       ],
       "links": [],
-      "tags": ["avatar-kit", "fleet"]
+      "tags": [
+        "avatar-kit",
+        "fleet"
+      ]
     }
   ]
 }
