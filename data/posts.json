@@ -1,8 +1,30 @@
 {
   "version": 1,
   "site": "dispatch",
-  "updated": "2026-08-26",
+  "updated": "2026-08-29",
   "posts": [
+    {
+      "id": "2026-08-26-resume-forge-wave-two",
+      "date": "2026-08-26",
+      "kind": "note",
+      "site": "resume-forge-site",
+      "title": "Resume Forge opens its second wave",
+      "summary": "The delivery board is open again: Resume Forge is getting a second campaign, with contracts frozen and workstreams assigned.",
+      "body": [
+        "The Mosaic campaign archived on August 25 and the delivery board immediately reopened for Resume Forge. Impact analysis counts 36 modules and 82 internal edges in the blast radius.",
+        "Watch this feed for what actually ships out of the wave."
+      ],
+      "links": [
+        {
+          "label": "Open Resume Forge",
+          "url": "https://resume.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "resume-forge",
+        "delivery"
+      ]
+    },
     {
       "id": "2026-08-26-four-sites-take-french-names",
       "date": "2026-08-26",
@@ -111,6 +133,23 @@
       ]
     },
     {
+      "id": "2026-08-21-one-tiny-pixel-person",
+      "date": "2026-08-21",
+      "kind": "feature",
+      "site": null,
+      "title": "One tiny pixel person, every site",
+      "summary": "The Neorgon Avatar Kit lands: 16x16 characters with tiers, share codes, and a fleet-wide cookie, vendored to sites the same way the header and footer kits are.",
+      "body": [
+        "The fleet's third shared kit draws 16x16 pixel characters with tiers and shareable codes, and remembers your character in a cookie every neorgon.com site can read.",
+        "Like the header and footer kits, the canonical source lives in one place and sync-avatar.sh stamps vendored copies into each site. A new smoke check keeps those copies from drifting."
+      ],
+      "links": [],
+      "tags": [
+        "avatar-kit",
+        "fleet"
+      ]
+    },
+    {
       "id": "2026-08-21-avatars-learn-to-walk",
       "date": "2026-08-21",
       "kind": "feature",
@@ -130,23 +169,6 @@
       "tags": [
         "avatar-kit",
         "floorplan"
-      ]
-    },
-    {
-      "id": "2026-08-21-one-tiny-pixel-person",
-      "date": "2026-08-21",
-      "kind": "feature",
-      "site": null,
-      "title": "One tiny pixel person, every site",
-      "summary": "The Neorgon Avatar Kit lands: 16x16 characters with tiers, share codes, and a fleet-wide cookie, vendored to sites the same way the header and footer kits are.",
-      "body": [
-        "The fleet's third shared kit draws 16x16 pixel characters with tiers and shareable codes, and remembers your character in a cookie every neorgon.com site can read.",
-        "Like the header and footer kits, the canonical source lives in one place and sync-avatar.sh stamps vendored copies into each site. A new smoke check keeps those copies from drifting."
-      ],
-      "links": [],
-      "tags": [
-        "avatar-kit",
-        "fleet"
       ]
     }
   ]
