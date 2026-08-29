@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dispatch: Neorgon fleet news</title>
+    <title>Antenne: Neorgon fleet news</title>
     <link>https://dispatch.neorgon.com/</link>
     <atom:link href="https://dispatch.neorgon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Launches, features, and fixes across the Neorgon fleet, approved at the desk before publishing</description>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Aug 2026 01:52:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 04:16:48 +0000</lastBuildDate>
     <item>
       <title>Four sites take French names</title>
       <link>https://dispatch.neorgon.com/#p=2026-08-26-four-sites-take-french-names</link>

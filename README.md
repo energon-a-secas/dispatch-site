@@ -1,6 +1,6 @@
 <div align="center">
 
-# Dispatch
+# Antenne
 
 Fleet launches, features, and updates as a news feed
 
@@ -30,7 +30,7 @@ Fleet launches, features, and updates as a news feed
 
 ## Overview
 
-Dispatch reports what shipped across the Neorgon fleet: launches, features, and
+Antenne reports what shipped across the Neorgon fleet: launches, features, and
 fixes as short news stories, drafted from the fleet's own work logs. Every story
 passes through an approval desk before it publishes, so the feed carries what a
 human decided was worth telling, not a firehose of commits. The same feed powers
@@ -47,7 +47,9 @@ an embeddable strip for the hub's corner popup and an RSS feed.
 - **Approval desk** -- `desk.html` reads uncommitted drafts from `data/drafts/`,
   lets you edit and approve each one, and writes the merged `data/posts.json`
 - **Embed strip** -- `?embed=1&limit=N` renders a compact headline list for
-  iframes, with no storage writes and an attribution link back to the full site
+  iframes, with no storage writes and an attribution link back to the full site;
+  add `&brand=0` to drop the strip's own masthead when the host chrome already
+  names the site (the hub's corner popup does)
 - **Chrome toggle** -- the header auto-hides while you read, and `h` hides the
   header and footer entirely
 - **Deep links** -- `#p=<story-id>` opens a story directly; RSS at `feed.xml`

@@ -22,6 +22,9 @@ export const state = {
   openId: null,     // id of the expanded story, one at a time
   embed,
   limit: embedLimit(),
+  // ?brand=0 drops the embed's own masthead, for hosts whose chrome
+  // already names the site (the hub's corner popup does).
+  brand: params.get('brand') !== '0',
   chrome: true,     // header + footer visible; `h` toggles (sortie pattern)
   lastSeen: null,   // newest post date already seen on a previous visit
   prevSeen: null,   // snapshot of lastSeen at load, drives the NEW badges

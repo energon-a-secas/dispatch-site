@@ -95,8 +95,10 @@ function renderEmbed(s) {
   const full = location.origin + location.pathname;
   document.getElementById('main').innerHTML =
     '<div class="embed">'
-    + '<div class="embed__masthead"><span class="embed__brand">Dispatch</span>'
-    + '<span class="embed__tag">fleet news</span></div>'
+    + (s.brand
+      ? '<div class="embed__masthead"><span class="embed__brand">Antenne</span>'
+        + '<span class="embed__tag">fleet news</span></div>'
+      : '')
     + (posts.length
       ? '<ul class="embed__list">' + posts.map((p) =>
           '<li class="embed__item">'
@@ -109,7 +111,7 @@ function renderEmbed(s) {
         ).join('') + '</ul>'
       : '<div class="embed__empty">No stories yet.</div>')
     + '<a class="embed__open" href="' + escHtml(full) + '" target="_blank" rel="noopener noreferrer">'
-    + 'Open in Dispatch ↗</a>'
+    + 'Open in Antenne ↗</a>'
     + '</div>';
 }
 

@@ -90,7 +90,7 @@ def main() -> None:
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dispatch: Neorgon fleet news</title>
+    <title>Antenne: Neorgon fleet news</title>
     <link>{SITE_URL}</link>
     <atom:link href="{SITE_URL}feed.xml" rel="self" type="application/rss+xml"/>
     <description>Launches, features, and fixes across the Neorgon fleet, approved at the desk before publishing</description>
