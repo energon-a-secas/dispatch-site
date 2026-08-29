@@ -81,7 +81,8 @@ ES modules require an HTTP server (not `file://`):
 
 ```bash
 make serve        # http://localhost:8873
-make feed         # validate data/posts.json, regenerate feed.xml
+make feed         # validate posts.json, regenerate feed.xml, stamp the feed into index.html
+make check        # fail if the stamped feed is stale against posts.json
 make drafts-clean # delete consumed drafts
 ```
 

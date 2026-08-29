@@ -8,6 +8,8 @@ import { KIND_LABELS } from './data.js';
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
   'August', 'September', 'October', 'November', 'December'];
 
+// scripts/build-feed.py mirrors this line for the publish-time stamp
+// (dated by posts.json's updated field); change them together.
 function editionLine(posts) {
   const now = new Date();
   const today = MONTHS[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
@@ -20,7 +22,9 @@ function siteChip(post) {
   return '<span class="post__site">' + escHtml(post.site.replace(/-site$/, '')) + '</span>';
 }
 
-/** One story card. `opts`: { open, isNew, hero }. */
+/** One story card. `opts`: { open, isNew, hero }.
+    scripts/build-feed.py mirrors this markup (default state: closed, not new)
+    for the publish-time stamp; change them together. */
 export function renderCard(post, opts = {}) {
   const open = !!opts.open;
   const cls = 'post card' + (opts.hero ? ' post--hero' : '') + (open ? ' post--open' : '');
@@ -56,6 +60,8 @@ function applyFilters(s) {
   });
 }
 
+// scripts/build-feed.py mirrors this markup (filter fixed to all) for the
+// publish-time stamp; change them together.
 function renderChips(s) {
   const counts = { all: s.posts.length, launch: 0, feature: 0, fix: 0, note: 0 };
   s.posts.forEach((p) => { counts[p.kind] += 1; });

@@ -8,8 +8,8 @@ help:
 	@echo ""
 	@echo "  make serve         Start dev server → http://localhost:$(PORT)"
 	@echo "  make kill          Kill this project's HTTP server"
-	@echo "  make feed          Validate data/posts.json, regenerate feed.xml"
-	@echo "  make check         Validate data/posts.json only"
+	@echo "  make feed          Validate posts.json, regenerate feed.xml, stamp the feed into index.html"
+	@echo "  make check         Validate posts.json and that the stamped feed is current"
 	@echo "  make drafts-clean  Delete consumed drafts (data/drafts/)"
 	@echo ""
 
