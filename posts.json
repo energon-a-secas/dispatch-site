@@ -1,0 +1,337 @@
+{
+  "version": 1,
+  "site": "dispatch",
+  "updated": "2026-08-31",
+  "posts": [
+    {
+      "id": "2026-08-29-one-way-home",
+      "date": "2026-08-29",
+      "kind": "feature",
+      "site": null,
+      "title": "Every site gets one way home",
+      "summary": "The logo and the site title merged into a single link home, the favicon now takes its tint from whatever theme you picked, and the hub has its own planet icon in the header.",
+      "body": [
+        "Two clickable things sitting next to each other and going to the same place is a small daily annoyance. The header kit now merges the logo and the title into one link, which also gives the fleet a bigger target on a phone.",
+        "The favicon follows your chosen theme rather than staying fixed, so a tab you left open in one palette still looks like the site you set up. Sites can also opt into a source link in the header, for the ones whose code is worth reading."
+      ],
+      "links": [],
+      "tags": [
+        "header-kit",
+        "fleet",
+        "design"
+      ]
+    },
+    {
+      "id": "2026-08-29-echeance-watches-the-clock",
+      "date": "2026-08-29",
+      "kind": "launch",
+      "site": "echeance-site",
+      "title": "Echeance watches the clock",
+      "summary": "Echeance tracks when tokens and credentials expire, and what the renewal actually takes for each one. The renewal steps live next to the date, because the date alone never helped anybody.",
+      "body": [
+        "An expiry date on its own tells you that something is about to break, not what to do about it. Echeance keeps the renewal steps beside the date for each credential, so the reminder arrives with its own instructions.",
+        "It is live now."
+      ],
+      "links": [
+        {
+          "label": "Open Echeance",
+          "url": "https://echeance.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "launch",
+        "credentials",
+        "ops"
+      ]
+    },
+    {
+      "id": "2026-08-28-four-open-in-one-day",
+      "date": "2026-08-28",
+      "kind": "launch",
+      "site": null,
+      "title": "Four sites open in one day",
+      "summary": "Releve, Scalpel, Enjeu and Cadrage all went live on the same day. A transcript pricer, a skill dissector, a print-and-play boss rush, and a camera settings trainer.",
+      "body": [
+        "Releve prices your Claude Code transcripts at real API rates. Scalpel takes a skill apart from a zip or a pasted file and tells you what to fix before it ships. Enjeu is a print-and-play boss rush for one player, one die, and the bricks and figures you already own. Cadrage walks you through focus and the exposure triangle on a camera menu replica and finds the settings that contradict each other.",
+        "They have nothing in common except the day they opened. All four are live and need no account."
+      ],
+      "links": [
+        {
+          "label": "Open Releve",
+          "url": "https://releve.neorgon.com/"
+        },
+        {
+          "label": "Open Scalpel",
+          "url": "https://scalpel.neorgon.com/"
+        },
+        {
+          "label": "Open Enjeu",
+          "url": "https://enjeu.neorgon.com/"
+        },
+        {
+          "label": "Open Cadrage",
+          "url": "https://cadrage.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "launch",
+        "tools",
+        "games"
+      ]
+    },
+    {
+      "id": "2026-08-26-resume-forge-wave-two",
+      "date": "2026-08-26",
+      "kind": "note",
+      "site": "resume-forge-site",
+      "title": "Resume Forge opens its second wave",
+      "summary": "The delivery board is open again: Resume Forge is getting a second campaign, with contracts frozen and workstreams assigned.",
+      "body": [
+        "The Mosaic campaign archived on August 25 and the delivery board immediately reopened for Resume Forge. Impact analysis counts 36 modules and 82 internal edges in the blast radius.",
+        "Watch this feed for what actually ships out of the wave."
+      ],
+      "links": [
+        {
+          "label": "Open Resume Forge",
+          "url": "https://resume.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "resume-forge",
+        "delivery"
+      ]
+    },
+    {
+      "id": "2026-08-26-four-sites-take-french-names",
+      "date": "2026-08-26",
+      "kind": "note",
+      "site": null,
+      "title": "Four sites take French names",
+      "summary": "Gambit is now Gamme, Stake is Enjeu, TickBox is Carnet, Rigcheck is Cadrage. One live domain moved, and the old one redirects.",
+      "body": [
+        "Parla and Sortie already carried romance-language names that say what the site does without reading as a category label. Four more join them. Gambit becomes Gamme, after 'faire ses gammes', the French for practising your scales: the drilling you do until a pattern stops needing to be worked out. Stake becomes Enjeu, which means what is at stake and hides the word for game inside it. TickBox becomes Carnet, a pocket notebook. Rigcheck becomes Cadrage, the framing of a shot.",
+        "Only Gamme was live, so it is the only one that cost anything. gambit.neorgon.com now redirects to gamme.neorgon.com with the path intact, so old links and bookmarks still land, and hub search still answers to the old name. Saved progress survived the move: the storage key deliberately kept its original name, because renaming it would have quietly wiped everyone's drills.",
+        "Enjeu, Carnet and Cadrage had reserved domains and nothing served, so renaming them cost a directory move and a registry rebuild."
+      ],
+      "links": [
+        {
+          "label": "Gamme",
+          "url": "https://gamme.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "fleet",
+        "naming"
+      ]
+    },
+    {
+      "id": "2026-08-26-dispatch-is-live",
+      "date": "2026-08-26",
+      "kind": "launch",
+      "site": "dispatch-site",
+      "title": "Dispatch is live",
+      "summary": "The fleet gets a front page. Launches, features, and fixes land here as short stories, each one approved at the desk before it ships.",
+      "body": [
+        "Neorgon ships sites faster than anyone can follow, and until now there was no single place that said what changed. Dispatch is that place: a news feed for the fleet, written from the work that actually happened.",
+        "Every story starts as a draft pulled from fleet work logs. Nothing publishes itself: drafts wait at the desk until a human reads them, edits them, and approves them into this feed."
+      ],
+      "links": [
+        {
+          "label": "Browse the fleet",
+          "url": "https://neorgon.com/"
+        }
+      ],
+      "tags": [
+        "dispatch",
+        "fleet"
+      ]
+    },
+    {
+      "id": "2026-08-25-stake-deals-itself-in",
+      "date": "2026-08-25",
+      "kind": "note",
+      "site": "stake-site",
+      "title": "Stake deals itself in",
+      "summary": "The print-and-play boss rush for one player, one die, and the bricks you own is now a registered fleet site. Rules, printable cards, an on-screen runner, and a balance simulator are on the way to stake.neorgon.com.",
+      "body": [
+        "Stake started as a plan document on August 22 and grew into a full project three days later: game rules, printable cards, a browser runner, and a simulator that checks the balance math.",
+        "The site is registered and its domain is reserved. Watch this feed for the moment it goes live."
+      ],
+      "links": [
+        {
+          "label": "Board games on the hub",
+          "url": "https://neorgon.com/#group-boardgames"
+        }
+      ],
+      "tags": [
+        "stake",
+        "board-games",
+        "coming-soon"
+      ]
+    },
+    {
+      "id": "2026-08-24-header-kit-arrival-fix",
+      "date": "2026-08-24",
+      "kind": "fix",
+      "site": null,
+      "title": "The Header Kit counts arrivals right again",
+      "summary": "The shared header's arrival pattern now counts #s= hashes, so deep links into a site register the way plain visits do.",
+      "body": [
+        "A small regex gap in the vendored Header Kit meant arrivals that carried a #s= hash slipped past the arrival counter. The kit now treats them like any other visit, and the fix synced out to every site that vendors the header.",
+        "This one sat in the prompt queue as item 40 before landing, which is exactly what the queue is for."
+      ],
+      "links": [],
+      "tags": [
+        "header-kit",
+        "fleet"
+      ]
+    },
+    {
+      "id": "2026-08-21-pixeldoll-joins-the-fleet",
+      "date": "2026-08-21",
+      "kind": "launch",
+      "site": "pixeldoll-site",
+      "title": "Pixeldoll joins the fleet",
+      "summary": "Build a 16x16 pixel character in the browser, then meet it again in Floorplan: the my-character cookie carries your doll across the fleet.",
+      "body": [
+        "Pixeldoll is a pixel character builder on top of the shared Avatar Kit. Pick a body, a palette, and the details, and the result is yours across every site that reads the fleet cookie.",
+        "It launched as Paperdoll in the morning and was renamed Pixeldoll by the afternoon, which has to be a fleet record for fastest rebrand."
+      ],
+      "links": [
+        {
+          "label": "Open Pixeldoll",
+          "url": "https://pixeldoll.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "pixeldoll",
+        "avatar-kit"
+      ]
+    },
+    {
+      "id": "2026-08-21-one-tiny-pixel-person",
+      "date": "2026-08-21",
+      "kind": "feature",
+      "site": null,
+      "title": "One tiny pixel person, every site",
+      "summary": "The Neorgon Avatar Kit lands: 16x16 characters with tiers, share codes, and a fleet-wide cookie, vendored to sites the same way the header and footer kits are.",
+      "body": [
+        "The fleet's third shared kit draws 16x16 pixel characters with tiers and shareable codes, and remembers your character in a cookie every neorgon.com site can read.",
+        "Like the header and footer kits, the canonical source lives in one place and sync-avatar.sh stamps vendored copies into each site. A new smoke check keeps those copies from drifting."
+      ],
+      "links": [],
+      "tags": [
+        "avatar-kit",
+        "fleet"
+      ]
+    },
+    {
+      "id": "2026-08-21-avatars-learn-to-walk",
+      "date": "2026-08-21",
+      "kind": "feature",
+      "site": "floorplan-site",
+      "title": "Fleet avatars learn to walk",
+      "summary": "The Avatar Kit gains three walk frames, and Floorplan's Sim mode uses them to send little people strolling around your team map.",
+      "body": [
+        "The shared Avatar Kit now exposes walk frames 0, 1, and 2 on drawSprite and spriteDataUrl. Any site that draws fleet avatars can animate them instead of pinning them in place.",
+        "Floorplan's Sim mode is the first customer: drop people into rooms and watch them wander between desks."
+      ],
+      "links": [
+        {
+          "label": "Open Floorplan",
+          "url": "https://floorplan.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "avatar-kit",
+        "floorplan"
+      ]
+    },
+    {
+      "id": "2026-08-20-decks-that-argue",
+      "date": "2026-08-20",
+      "kind": "feature",
+      "site": "slides-site",
+      "title": "Slides learns to check its own exports",
+      "summary": "Exporting a deck now produces a receipt showing what actually made it into the file, plus a contrast check on brand colour pairs and a measured fit rather than a guess.",
+      "body": [
+        "The failure this fixes is quiet and specific: an export that looks right on screen and is wrong in the file. Slides now hands back a receipt on export, so what went into the deck is something you can read rather than assume.",
+        "Two smaller additions came with it. Brand colour pairs get a real contrast check instead of only having their names validated, and text fit is measured rather than estimated. You can also paste Markdown straight in and get a deck out of it."
+      ],
+      "links": [
+        {
+          "label": "Open Slides",
+          "url": "https://slides.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "slides",
+        "export",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2026-08-19-the-hub-learns-to-forget",
+      "date": "2026-08-19",
+      "kind": "feature",
+      "site": "neorgon-site",
+      "title": "The hub learns to forget",
+      "summary": "The hub now archives tools it has superseded and keeps reference material out of the What is New surfaces, so the front page shows what actually changed rather than everything that exists.",
+      "body": [
+        "A directory that only ever grows stops being a directory. The hub now has an archive for tools that something newer replaced, and it holds reference tools out of the recency lists, since a thing that has not changed in months should not be competing for the same attention as a launch.",
+        "The constellation view got quieter too. Routes stopped crossing their own labels, and the section pills announce themselves once instead of asking for attention forever."
+      ],
+      "links": [
+        {
+          "label": "Open the hub",
+          "url": "https://neorgon.com/"
+        }
+      ],
+      "tags": [
+        "hub",
+        "navigation"
+      ]
+    },
+    {
+      "id": "2026-08-18-the-fleet-grows-a-safety-net",
+      "date": "2026-08-18",
+      "kind": "note",
+      "site": null,
+      "title": "The fleet grows a safety net",
+      "summary": "Every site now ships a 404 page, adopts a shared ignore base, and gets checked by a suite that runs in CI. The interesting part is which checks were added, because each one exists because something slipped through.",
+      "body": [
+        "A batch of new checks landed across every site at once. Each one is small: a 404 page exists, a site's ignore rules cover the same ground as the template, shared helper code is actually shared rather than copied into each project, screen readers get told when a toast appears.",
+        "None of that is exciting on its own. Together it is the difference between a fleet you can change confidently and one where every edit is a small gamble. The suite now runs on every push."
+      ],
+      "links": [],
+      "tags": [
+        "fleet",
+        "quality",
+        "checks"
+      ]
+    },
+    {
+      "id": "2026-08-17-mosaic-joins-the-fleet",
+      "date": "2026-08-17",
+      "kind": "launch",
+      "site": "mosaic-site",
+      "title": "Mosaic joins the fleet",
+      "summary": "Mosaic builds photo collages that stay editable. Change the grid, the shape or the column count whenever you like, and the photos you already placed stay where they are.",
+      "body": [
+        "Most collage tools ask you to commit to a layout before you have seen the photos in it. Mosaic does not. The grid, the frame shape and the column count are all knobs you can turn after the fact, and nothing you have already placed gets thrown away when you turn one.",
+        "It is live now and needs no account."
+      ],
+      "links": [
+        {
+          "label": "Open Mosaic",
+          "url": "https://mosaic.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "launch",
+        "photos",
+        "collage"
+      ]
+    }
+  ]
+}
