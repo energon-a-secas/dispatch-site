@@ -4,6 +4,29 @@
   "updated": "2026-08-31",
   "posts": [
     {
+      "id": "2026-08-31-aficion-opens-the-atlas",
+      "date": "2026-08-31",
+      "kind": "launch",
+      "site": "aficion-site",
+      "title": "Aficion opens the atlas",
+      "summary": "One connected map of 269 hobbies and the crafts underneath, drawn like a skill tree: mark what you practise, watch the gold paths join, and compare maps by link.",
+      "body": [
+        "Aficion is a constellation atlas of hobbies: 269 nodes across 18 clusters, joined by 566 typed edges that say why two things sit together. A mesh node is an ESP32 wearing a LoRa radio; the same airbrush weathers a costume chest piece and a thumb-sized tank.",
+        "Mark what you practise and the map answers: gold paths between your own nodes, one-step-away suggestions justified by shared gear, and nine curated builds that put an ambitious project's steps in dependency order. The character sheet folds it all into a six-domain radar with earned titles, and a whole map shares as a link that never touches a server.",
+        "First visits open on Bench and Shelf, an example map to explore. Clear my map starts your own."
+      ],
+      "links": [
+        {
+          "label": "Open the atlas",
+          "url": "https://aficion.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "launch",
+        "atlas"
+      ]
+    },
+    {
       "id": "2026-08-29-one-way-home",
       "date": "2026-08-29",
       "kind": "feature",
