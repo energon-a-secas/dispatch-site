@@ -1,8 +1,31 @@
 {
   "version": 1,
   "site": "dispatch",
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "posts": [
+    {
+      "id": "2026-09-01-aficion-learns-your-ties",
+      "date": "2026-09-01",
+      "kind": "feature",
+      "site": "aficion-site",
+      "title": "Aficion learns your ties",
+      "summary": "The atlas grows to 331 nodes and 22 clusters, levels become one Low-to-Hardcore dedication scale, and you can now tie your own links between nodes, note why, and link straight to any node.",
+      "body": [
+        "One day after launch, the atlas reorganised itself. The nine crafts now orbit the hub at the centre instead of arcing along the bottom, every cluster carries its own hue, and four new families joined the map: Reading and Books, Gardening, Cooking and Food, and Outdoors, alongside the JRPGs a search once missed. A five-step tour greets first visits, a Layers control steps back to the anchors, and focusing a cluster dims everything but one family and the crafts under it.",
+        "Levels became one scale. Instead of per-hobby ladders, every node takes a dedication from Low to Hardcore, measured in time rather than talent, set from a right-click menu that also marks, centres and drills. Marked nodes wear their dedication as gold quarter-arcs; Hardcore closes the ring.",
+        "And the map now takes your word for it: right-click a node, link from there, and a dashed gold tie joins two things the corpus never connected, with a note saying why and an undo beside it. Ties travel in share links, merge into routing so tied islands stop being offered bridges, and every node now has an address you can copy and send."
+      ],
+      "links": [
+        {
+          "label": "Open the atlas",
+          "url": "https://aficion.neorgon.com/"
+        }
+      ],
+      "tags": [
+        "feature",
+        "atlas"
+      ]
+    },
     {
       "id": "2026-08-31-aficion-opens-the-atlas",
       "date": "2026-08-31",
