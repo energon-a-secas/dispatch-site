@@ -6,7 +6,39 @@
     <atom:link href="https://dispatch.neorgon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Launches, features, and fixes across the Neorgon fleet, approved at the desk before publishing</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 00:26:59 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 00:29:55 +0000</lastBuildDate>
+    <item>
+      <title>Every site gets one way home</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-29-one-way-home</link>
+      <guid isPermaLink="false">2026-08-29-one-way-home</guid>
+      <pubDate>Sat, 29 Aug 2026 12:00:00 +0000</pubDate>
+      <category>feature</category>
+      <description>The logo and the site title merged into a single link home, the favicon now takes its tint from whatever theme you picked, and the hub has its own planet icon in the header.</description>
+    </item>
+    <item>
+      <title>Echeance watches the clock</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-29-echeance-watches-the-clock</link>
+      <guid isPermaLink="false">2026-08-29-echeance-watches-the-clock</guid>
+      <pubDate>Sat, 29 Aug 2026 12:00:00 +0000</pubDate>
+      <category>launch</category>
+      <description>Echeance tracks when tokens and credentials expire, and what the renewal actually takes for each one. The renewal steps live next to the date, because the date alone never helped anybody.</description>
+    </item>
+    <item>
+      <title>Balise collects the corrections</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-29-balise-collects-the-corrections</link>
+      <guid isPermaLink="false">2026-08-29-balise-collects-the-corrections</guid>
+      <pubDate>Sat, 29 Aug 2026 12:00:00 +0000</pubDate>
+      <category>launch</category>
+      <description>Spotted something wrong on a Neorgon site? Balise takes the report. It collects corrections raised from anywhere in the fleet, triages them behind a private desk, and keeps a public record of what got fixed.</description>
+    </item>
+    <item>
+      <title>Four sites open in one day</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-28-four-open-in-one-day</link>
+      <guid isPermaLink="false">2026-08-28-four-open-in-one-day</guid>
+      <pubDate>Fri, 28 Aug 2026 12:00:00 +0000</pubDate>
+      <category>launch</category>
+      <description>Releve, Scalpel, Enjeu and Cadrage all went live on the same day. A transcript pricer, a skill dissector, a print-and-play boss rush, and a camera settings trainer.</description>
+    </item>
     <item>
       <title>Resume Forge opens its second wave</title>
       <link>https://dispatch.neorgon.com/#p=2026-08-26-resume-forge-wave-two</link>
@@ -70,6 +102,38 @@
       <pubDate>Fri, 21 Aug 2026 12:00:00 +0000</pubDate>
       <category>feature</category>
       <description>The Avatar Kit gains three walk frames, and Floorplan's Sim mode uses them to send little people strolling around your team map.</description>
+    </item>
+    <item>
+      <title>Slides learns to check its own exports</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-20-decks-that-argue</link>
+      <guid isPermaLink="false">2026-08-20-decks-that-argue</guid>
+      <pubDate>Thu, 20 Aug 2026 12:00:00 +0000</pubDate>
+      <category>feature</category>
+      <description>Exporting a deck now produces a receipt showing what actually made it into the file, plus a contrast check on brand colour pairs and a measured fit rather than a guess.</description>
+    </item>
+    <item>
+      <title>The hub learns to forget</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-19-the-hub-learns-to-forget</link>
+      <guid isPermaLink="false">2026-08-19-the-hub-learns-to-forget</guid>
+      <pubDate>Wed, 19 Aug 2026 12:00:00 +0000</pubDate>
+      <category>feature</category>
+      <description>The hub now archives tools it has superseded and keeps reference material out of the What is New surfaces, so the front page shows what actually changed rather than everything that exists.</description>
+    </item>
+    <item>
+      <title>The fleet grows a safety net</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-18-the-fleet-grows-a-safety-net</link>
+      <guid isPermaLink="false">2026-08-18-the-fleet-grows-a-safety-net</guid>
+      <pubDate>Tue, 18 Aug 2026 12:00:00 +0000</pubDate>
+      <category>note</category>
+      <description>Every site now ships a 404 page, adopts a shared ignore base, and gets checked by a suite that runs in CI. The interesting part is which checks were added, because each one exists because something slipped through.</description>
+    </item>
+    <item>
+      <title>Mosaic joins the fleet</title>
+      <link>https://dispatch.neorgon.com/#p=2026-08-17-mosaic-joins-the-fleet</link>
+      <guid isPermaLink="false">2026-08-17-mosaic-joins-the-fleet</guid>
+      <pubDate>Mon, 17 Aug 2026 12:00:00 +0000</pubDate>
+      <category>launch</category>
+      <description>Mosaic builds photo collages that stay editable. Change the grid, the shape or the column count whenever you like, and the photos you already placed stay where they are.</description>
     </item>
   </channel>
 </rss>
