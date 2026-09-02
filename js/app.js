@@ -4,7 +4,8 @@
 import { state, loadSaved, save } from './state.js';
 import { loadPosts } from './data.js';
 import { render } from './render.js';
-import { bindEvents, applyChrome, openFromHash } from './events.js';
+import { bindEvents, openFromHash } from './events.js';
+import { init as initKeys } from './neokeys/index.js';
 
 async function init() {
   loadSaved(state);
@@ -23,7 +24,9 @@ async function init() {
 
   if (state.embed) return;
   bindEvents(state);
-  applyChrome(state.chrome);
+  // The embed never reaches here, so H stays dead inside host pages.
+  // 'full' keeps the pre-kit behaviour: this feed hid its footer too.
+  initKeys({ chromeToggle: 'full' });
   openFromHash(state);
   // Watermark only moves forward: a retracted story must not regress it
   // and re-flag everything as NEW on the next visit.

@@ -1,30 +1,10 @@
 // ── Event handlers ───────────────────────────────────────────
 // Feed interactions: filter chips, search, expand/collapse,
-// keyboard nav, hash deep links, and the chrome toggle.
+// keyboard nav, and hash deep links. The H chrome toggle is the
+// NeoKeys kit's now (js/neokeys/, initialised from app.js).
 
-import { save } from './state.js';
 import { render } from './render.js';
-import { $, debounce, showToast } from './utils.js';
-
-/**
- * Show or hide the header + footer. Same trick as sortie-site:
- * site-local header CSS is forbidden fleet-wide and .header-hidden is
- * owned by the kit's scroll handler, so inline display wins over both.
- */
-export function applyChrome(on) {
-  const header = document.querySelector('.header-bar');
-  const footer = document.querySelector('.neo-footer');
-  if (header) header.style.display = on ? '' : 'none';
-  if (footer) footer.style.display = on ? '' : 'none';
-  document.body.dataset.chrome = on ? 'on' : 'off';
-}
-
-function toggleChrome(s) {
-  s.chrome = !s.chrome;
-  applyChrome(s.chrome);
-  save(s);
-  if (!s.chrome) showToast('Chrome hidden. Press h to bring it back.', 5000);
-}
+import { $, debounce } from './utils.js';
 
 function setOpen(s, id) {
   s.openId = s.openId === id ? null : id;
@@ -81,7 +61,6 @@ function onKeydown(s, e) {
   if (e.key === 'j') { e.preventDefault(); moveFocus(1); }
   else if (e.key === 'k') { e.preventDefault(); moveFocus(-1); }
   else if (e.key === '/') { e.preventDefault(); $('feedSearch').focus(); }
-  else if (e.key === 'h') { toggleChrome(s); }
 }
 
 export function bindEvents(s) {

@@ -25,19 +25,18 @@ export const state = {
   // ?brand=0 drops the embed's own masthead, for hosts whose chrome
   // already names the site (the hub's corner popup does).
   brand: params.get('brand') !== '0',
-  chrome: true,     // header + footer visible; `h` toggles (sortie pattern)
   lastSeen: null,   // newest post date already seen on a previous visit
   prevSeen: null,   // snapshot of lastSeen at load, drives the NEW badges
 };
 
-/** Load persisted prefs. Only chrome + lastSeen survive reloads. */
+/** Load persisted prefs. Only lastSeen survives reloads; the chrome
+    preference moved into the NeoKeys kit's fleet-wide neo_chrome cookie. */
 export function loadSaved(s) {
   if (s.embed) return;
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return;
     const saved = JSON.parse(raw);
-    if (typeof saved.chrome === 'boolean') s.chrome = saved.chrome;
     if (typeof saved.lastSeen === 'string') s.lastSeen = saved.lastSeen;
   } catch { /* ignore corrupted data */ }
 }
@@ -47,7 +46,6 @@ export function save(s) {
   if (s.embed) return;
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      chrome: s.chrome,
       lastSeen: s.lastSeen,
     }));
   } catch { /* quota exceeded or private browsing */ }
